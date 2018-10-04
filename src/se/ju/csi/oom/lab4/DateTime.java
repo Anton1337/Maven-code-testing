@@ -20,7 +20,7 @@ public class DateTime {
 		this.year = year;
 		this.month = month;
 		this.day = day;
-		this.hour = hour;
+		this.hour = hour; // hej
 		this.minute = minute;
 		this.second = second;
 	}
