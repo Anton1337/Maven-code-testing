@@ -20,7 +20,7 @@ public class Company implements Participant {
 		return this.companyName;
 	}
 	public String getIdNr() {
-		return this.vatNo;
+		return this.vatNo; //yeah
 	}
 
 	// Setters
