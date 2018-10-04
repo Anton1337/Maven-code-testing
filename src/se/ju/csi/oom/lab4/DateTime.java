@@ -13,14 +13,14 @@ public class DateTime {
 	private int second;
 	
 	public String toString() {
-		return String.format("%04d-%02d-%02d %02d:%02d:%02d", year, month, day, hour, minute, second);
+		return String.format("%04d-%02d-%02d", year, month, day, hour, minute, second); //changed
 	}
 	
 	public DateTime(int year, int month, int day, int hour, int minute, int second) {
 		this.year = year;
 		this.month = month;
 		this.day = day;
-		this.hour = hour;
+		this.hour = hour; 
 		this.minute = minute;
 		this.second = second;
 	}
