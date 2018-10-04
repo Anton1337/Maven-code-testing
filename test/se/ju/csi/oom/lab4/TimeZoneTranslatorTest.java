@@ -49,7 +49,17 @@ public class TimeZoneTranslatorTest {
 		
 		DateTime newDatetime = TimeZoneTranslator.shiftTimeZone(datetime, TimeZone.CENTRAL_EUROPEAN_TIME.getOffset(), TimeZone.US_PACIFIC.getOffset());
 		
+		
 		assertEquals(newDatetime.toString(), "2015-12-31 21:00:00");
+	}
+	
+	@Test
+	public void testDateTime() {
+		DateTime datetime = new DateTime(2018, 8, 27, 8, 0, 0);
+		DateTime datetime2 = new DateTime("2018-08-27 08:00:00");
+		
+		assertEquals(datetime2.toString(), "2018-08-27 08:00:00");
+		assertEquals(datetime.toString(), "2018-08-27 08:00:00");
 	}
 
 }
